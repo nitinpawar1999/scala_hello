@@ -1,0 +1,4 @@
+[debug] [scala_hello-build] Classpath dependencies List()
+[debug] [scala_hello-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'scala_hello-build' to 'C:\Users\nitin\vscode\scala\scala_hello\project\.bloop\scala_hello-build.json'
+[success] Generated .bloop\scala_hello-build.json
