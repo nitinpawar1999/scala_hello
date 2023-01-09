@@ -157,3 +157,358 @@ Caused by: java.nio.channels.ClosedChannelException
 2022.12.29 23:44:08 INFO  Shut down connection with build server.
 2022.12.30 15:03:34 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\nitin\vscode\scala\scala_hello\.metals\lsp.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\lsp.trace.json
 2022.12.30 15:03:36 INFO  logging to file C:\Users\nitin\vscode\scala\scala_hello\.metals\metals.log
+2022.12.30 15:03:36 INFO  Started: Metals version 0.11.9 in workspace 'C:\Users\nitin\vscode\scala\scala_hello' for client Visual Studio Code 1.74.2.
+2022.12.30 15:03:39 INFO  time: initialize in 3.2s
+2022.12.30 15:03:40 INFO  Attempting to connect to the build server...
+2022.12.30 15:03:40 INFO  Bloop uses C:\Users\nitin\AppData\Local\Coursier\cache\arc\https\github.com\AdoptOpenJDK\openjdk8-binaries\releases\download\jdk8u292-b10\OpenJDK8U-jdk_x64_windows_hotspot_8u292b10.zip\jdk8u292-b10 defined at C:\Users\nitin\.bloop\bloop.json
+2022.12.30 15:03:40 INFO  skipping build import with status 'Installed'
+2022.12.30 15:03:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\bsp.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2022.12.30 15:03:40 INFO  Attempting to connect to the build server...
+2022.12.30 15:03:40 INFO  Bloop uses C:\Users\nitin\AppData\Local\Coursier\cache\arc\https\github.com\AdoptOpenJDK\openjdk8-binaries\releases\download\jdk8u292-b10\OpenJDK8U-jdk_x64_windows_hotspot_8u292b10.zip\jdk8u292-b10 defined at C:\Users\nitin\.bloop\bloop.json
+2022.12.30 15:03:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\project\.metals\bsp.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2022.12.30 15:03:41 INFO  time: Connected to build server in 0.85s
+2022.12.30 15:03:41 INFO  Connected to Build server: Bloop v1.5.4
+2022.12.30 15:03:47 INFO  no build target found for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.30 15:03:47 INFO  time: code lens generation in 7.76s
+2022.12.30 15:03:48 INFO  time: Imported build in 0.29s
+2022.12.30 15:03:49 INFO  no build target found for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.12.30 15:03:52 INFO  time: code lens generation in 5.94s
+2022.12.30 15:04:02 INFO  time: indexed workspace in 14s
+Dec 30, 2022 3:04:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18
+Dec 30, 2022 3:04:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 30, 2022 3:06:09 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 30, 2022 3:06:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.ClassNotFoundException: example.HelloTests
+java.util.concurrent.CompletionException: java.lang.ClassNotFoundException: example.HelloTests
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: example.HelloTests
+	at scala.meta.internal.metals.debug.BuildTargetClassesFinder.$anonfun$findClassAndBuildTarget$1(BuildTargetClassesFinder.scala:112)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.BuildTargetClassesFinder.findClassAndBuildTarget(BuildTargetClassesFinder.scala:113)
+	at scala.meta.internal.metals.debug.BuildTargetClassesFinder.findTestClassAndItsBuildTarget(BuildTargetClassesFinder.scala:67)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveTestClassParams$1(DebugProvider.scala:514)
+	at scala.meta.internal.metals.debug.DebugProvider$$anonfun$withRebuildRetry$1.$anonfun$applyOrElse$6(DebugProvider.scala:762)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
+	... 3 more
+
+Dec 30, 2022 3:06:50 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 30, 2022 3:07:01 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.12.30 15:07:10 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2022.12.30 15:07:10 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2022.12.30 15:07:10 INFO  Starting debug proxy for [Main]
+2022.12.30 15:07:11 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:6025 .
+2022.12.30 15:07:11 INFO  Attaching to debuggee VM succeeded.
+2022.12.30 15:07:11 INFO  Closing debug server tcp://0.0.0.0:6022
+2022.12.30 15:07:12 INFO  Canceling debug proxy for [Main]
+Dec 30, 2022 3:07:12 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: java.net.SocketException: Socket closed
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.net.SocketException: Socket closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at scala.meta.internal.metals.debug.SocketEndpoint.consume(SocketEndpoint.scala:22)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.consume(MessageIdAdapter.scala:43)
+	at scala.meta.internal.metals.debug.ServerAdapter.send(ServerAdapter.scala:30)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleClientMessage$1(DebugProxy.scala:146)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToClient$1(DebugProxy.scala:65)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:118)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 16 more
+
+2022.12.30 15:08:16 INFO  compiling scala_hello (1 scala source)
+2022.12.30 15:08:20 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 4m 38.993s)
+2022.12.30 15:08:20 INFO  compiling scala_hello (1 scala source)
+2022.12.30 15:08:20 INFO  time: compiled scala_hello in 0.59s
+2022.12.30 15:08:27 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2022.12.30 15:08:27 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2022.12.30 15:08:27 INFO  Starting debug proxy for [Main]
+2022.12.30 15:08:28 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:6055 .
+2022.12.30 15:08:28 INFO  Attaching to debuggee VM succeeded.
+2022.12.30 15:08:29 INFO  Canceling debug proxy for [Main]
+2022.12.30 15:08:28 INFO  Closing debug server tcp://0.0.0.0:6052
+2022.12.30 15:08:36 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 4m 55.565s)
+2022.12.30 15:08:41 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2022.12.30 15:08:41 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2022.12.30 15:08:41 INFO  Starting debug proxy for [Main]
+2022.12.30 15:08:41 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:6069 .
+2022.12.30 15:08:41 INFO  Attaching to debuggee VM succeeded.
+2022.12.30 15:08:53 INFO  Canceling debug proxy for [Main]
+2022.12.30 15:08:53 INFO  Closing debug server tcp://0.0.0.0:6066
+Dec 30, 2022 3:09:27 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+something's wrong: no file:///C:/Users/nitin/vscode/scala/scala_hello/src/main/scala/Main.scala in Array[<error>]RangePosition(file:///C:/Users/nitin/vscode/scala/scala_hello/src/main/scala/Main.scala, 34, 34, 42)
+something's wrong: no file:///C:/Users/nitin/vscode/scala/scala_hello/src/main/scala/Main.scala in Array[<error>]RangePosition(file:///C:/Users/nitin/vscode/scala/scala_hello/src/main/scala/Main.scala, 34, 34, 49)
+something's wrong: no file:///C:/Users/nitin/vscode/scala/scala_hello/src/main/scala/Main.scala in Array[<error>]RangePosition(file:///C:/Users/nitin/vscode/scala/scala_hello/src/main/scala/Main.scala, 34, 34, 42)
+Jan 01, 2023 6:50:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 145
+something's wrong: no file:///C:/Users/nitin/vscode/scala/scala_hello/src/main/scala/Main.scala in Array[String]RangePosition(file:///C:/Users/nitin/vscode/scala/scala_hello/src/main/scala/Main.scala, 34, 34, 47)
+2023.01.01 18:51:07 INFO  compiling scala_hello (1 scala source)
+2023.01.01 18:51:10 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.01 18:51:10 INFO  time: compiled scala_hello in 3.71s
+2023.01.01 18:51:14 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 51h 47m 33.496s)
+2023.01.01 18:51:19 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.01 18:51:19 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.01 18:51:19 INFO  Starting debug proxy for [Geeks]
+2023.01.01 18:51:20 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:16955 .
+2023.01.01 18:51:20 INFO  Attaching to debuggee VM succeeded.
+2023.01.01 18:51:19 INFO  Canceling debug proxy for [Geeks]
+2023.01.01 18:51:20 INFO  Closing debug server tcp://0.0.0.0:16952
+Jan 01, 2023 6:51:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 221
+2023.01.01 18:51:31 INFO  compiling scala_hello (1 scala source)
+2023.01.01 18:51:32 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.01 18:51:32 INFO  time: compiled scala_hello in 1.21s
+2023.01.01 18:51:35 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 51h 47m 53.673s)
+2023.01.01 18:51:39 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.01 18:51:39 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.01 18:51:39 INFO  Starting debug proxy for [Geeks]
+2023.01.01 18:51:39 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:16973 .
+2023.01.01 18:51:39 INFO  Attaching to debuggee VM succeeded.
+2023.01.01 18:51:39 INFO  Canceling debug proxy for [Geeks]
+2023.01.01 18:51:39 INFO  Closing debug server tcp://0.0.0.0:16970
+2023.01.01 19:04:50 INFO  compiling scala_hello (1 scala source)
+2023.01.01 19:04:51 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.01 19:04:51 INFO  time: compiled scala_hello in 1.6s
+2023.01.01 19:04:55 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 52h 1m 14.194s)
+2023.01.01 19:04:57 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 52h 1m 16.303s)
+2023.01.01 19:04:57 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 52h 1m 16.318s)
+2023.01.01 19:05:00 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.01 19:05:00 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.01 19:05:00 INFO  Starting debug proxy for [Geeks]
+2023.01.01 19:05:00 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:17050 .
+2023.01.01 19:05:00 INFO  Attaching to debuggee VM succeeded.
+2023.01.01 19:05:00 INFO  Canceling debug proxy for [Geeks]
+2023.01.01 19:05:00 INFO  Closing debug server tcp://0.0.0.0:17047
+2023.01.01 19:05:01 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.01 19:05:01 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.01 19:05:02 INFO  Starting debug proxy for [Geeks]
+2023.01.01 19:05:02 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:17056 .
+2023.01.01 19:05:02 INFO  Attaching to debuggee VM succeeded.
+2023.01.01 19:05:02 INFO  Closing debug server tcp://0.0.0.0:17052
+2023.01.01 19:05:02 INFO  Canceling debug proxy for [Geeks]
+2023.01.01 19:05:54 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 52h 2m 13.126s)
+2023.01.01 19:05:58 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.01 19:05:58 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.01 19:05:58 INFO  Starting debug proxy for [Geeks]
+2023.01.01 19:05:59 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:17073 .
+2023.01.01 19:05:59 INFO  Attaching to debuggee VM succeeded.
+2023.01.01 19:05:59 INFO  Canceling debug proxy for [Geeks]
+2023.01.01 19:05:59 INFO  Closing debug server tcp://0.0.0.0:17067
+2023.01.01 19:06:10 INFO  compiling scala_hello (1 scala source)
+2023.01.01 19:06:10 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 52h 2m 29.231s)
+2023.01.01 19:06:10 INFO  compiling scala_hello (1 scala source)
+2023.01.01 19:06:13 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.01 19:06:13 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.01 19:06:13 INFO  time: compiled scala_hello in 2.67s
+2023.01.01 19:06:15 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 52h 2m 33.958s)
+2023.01.01 19:06:17 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.01 19:06:17 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.01 19:06:18 INFO  Starting debug proxy for [Geeks]
+2023.01.01 19:06:18 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:17088 .
+2023.01.01 19:06:18 INFO  Attaching to debuggee VM succeeded.
+2023.01.01 19:06:19 INFO  Canceling debug proxy for [Geeks]
+2023.01.01 19:06:18 INFO  Closing debug server tcp://0.0.0.0:17085
+2023.01.01 19:14:01 INFO  compiling scala_hello (1 scala source)
+2023.01.01 19:14:01 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.01 19:14:03 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.01 19:14:03 INFO  time: compiled scala_hello in 2.08s
+2023.01.01 19:14:09 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.01 19:14:09 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.01 19:14:10 INFO  Starting debug proxy for [Geeks]
+2023.01.01 19:14:10 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:17122 .
+2023.01.01 19:14:10 INFO  Attaching to debuggee VM succeeded.
+2023.01.01 19:14:11 INFO  Canceling debug proxy for [Geeks]
+2023.01.01 19:14:10 INFO  Closing debug server tcp://0.0.0.0:17119
+Jan 01, 2023 9:58:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 651
+2023.01.01 21:59:43 INFO  compiling scala_hello (1 scala source)
+2023.01.01 21:59:43 INFO  time: compiled scala_hello in 0.94s
+2023.01.01 21:59:50 INFO  compiling scala_hello (1 scala source)
+2023.01.01 21:59:52 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.01 21:59:52 INFO  time: compiled scala_hello in 2.28s
+2023.01.01 21:59:54 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.01 21:59:55 INFO  compiling scala_hello (1 scala source)
+2023.01.01 21:59:55 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.01 21:59:56 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.01 21:59:56 INFO  time: compiled scala_hello in 1.77s
+2023.01.01 22:00:01 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 54h 56m 20.084s)
+2023.01.01 22:00:05 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.01 22:00:05 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.01 22:00:05 INFO  Starting debug proxy for [Geeks]
+2023.01.01 22:00:06 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:17565 .
+2023.01.01 22:00:06 INFO  Attaching to debuggee VM succeeded.
+2023.01.01 22:00:05 INFO  Canceling debug proxy for [Geeks]
+2023.01.01 22:00:06 INFO  Closing debug server tcp://0.0.0.0:17562
+2023.01.01 22:00:15 INFO  compiling scala_hello (1 scala source)
+2023.01.01 22:00:15 INFO  time: compiled scala_hello in 0.32s
+2023.01.01 22:00:23 INFO  compiling scala_hello (1 scala source)
+2023.01.01 22:00:25 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.01 22:00:25 INFO  time: compiled scala_hello in 1.62s
+2023.01.01 22:00:29 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 54h 56m 47.877s)
+2023.01.01 22:00:33 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.01 22:00:33 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.01 22:00:33 INFO  Starting debug proxy for [Geeks]
+2023.01.01 22:00:34 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:17585 .
+2023.01.01 22:00:34 INFO  Attaching to debuggee VM succeeded.
+2023.01.01 22:00:33 INFO  Canceling debug proxy for [Geeks]
+2023.01.01 22:00:34 INFO  Closing debug server tcp://0.0.0.0:17582
+2023.01.01 22:19:25 INFO  compiling scala_hello (1 scala source)
+2023.01.01 22:19:28 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.01 22:19:28 INFO  time: compiled scala_hello in 2.7s
+2023.01.01 22:19:41 INFO  compiling scala_hello (1 scala source)
+2023.01.01 22:19:41 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.01 22:19:43 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.01 22:19:43 INFO  time: compiled scala_hello in 2.11s
+2023.01.01 22:19:48 INFO  compiling scala_hello (1 scala source)
+2023.01.01 22:19:50 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.01 22:19:50 INFO  time: compiled scala_hello in 1.88s
+2023.01.01 22:19:53 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 55h 16m 11.812s)
+2023.01.01 22:19:57 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.01 22:19:57 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.01 22:19:57 INFO  Starting debug proxy for [Geeks]
+2023.01.01 22:19:58 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:17760 .
+2023.01.01 22:19:58 INFO  Attaching to debuggee VM succeeded.
+2023.01.01 22:19:59 INFO  Canceling debug proxy for [Geeks]
+2023.01.01 22:19:58 INFO  Closing debug server tcp://0.0.0.0:17757
+2023.01.02 15:56:08 INFO  compiling scala_hello (1 scala source)
+2023.01.02 15:56:12 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.02 15:56:12 INFO  time: compiled scala_hello in 4.07s
+2023.01.02 15:56:12 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:15 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:17 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:19 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:19 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 72h 52m 37.874s)
+2023.01.02 15:56:19 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:21 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:23 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.02 15:56:23 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.02 15:56:23 INFO  Starting debug proxy for [Geeks]
+2023.01.02 15:56:24 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:20961 .
+2023.01.02 15:56:24 INFO  Attaching to debuggee VM succeeded.
+2023.01.02 15:56:25 INFO  Canceling debug proxy for [Geeks]
+2023.01.02 15:56:24 INFO  Closing debug server tcp://0.0.0.0:20958
+2023.01.02 15:56:29 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:32 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:33 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:34 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:35 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:36 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:41 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:48 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:53 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:53 INFO  compiling scala_hello (1 scala source)
+2023.01.02 15:56:54 WARN  Could not load snapshot text for C:\Users\nitin\vscode\scala\scala_hello\src\main\scala\Main.scala
+2023.01.02 15:56:55 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.02 15:56:55 INFO  time: compiled scala_hello in 1.58s
+2023.01.02 15:57:01 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.02 15:57:01 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.02 15:57:02 INFO  Starting debug proxy for [Geeks]
+2023.01.02 15:57:02 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:20978 .
+2023.01.02 15:57:02 INFO  Attaching to debuggee VM succeeded.
+2023.01.02 15:57:02 INFO  Closing debug server tcp://0.0.0.0:20975
+2023.01.02 15:57:03 INFO  Canceling debug proxy for [Geeks]
+2023.01.02 15:58:58 INFO  compiling scala_hello (1 scala source)
+2023.01.02 15:58:59 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.02 15:58:59 INFO  time: compiled scala_hello in 1.61s
+2023.01.02 15:59:02 INFO  Deduplicating compilation of scala_hello from bsp client 'Metals 0.11.9' (since 72h 55m 20.708s)
+2023.01.02 15:59:06 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.02 15:59:06 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.02 15:59:06 INFO  Starting debug proxy for [Geeks]
+2023.01.02 15:59:06 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:21004 .
+2023.01.02 15:59:06 INFO  Attaching to debuggee VM succeeded.
+2023.01.02 15:59:07 INFO  Canceling debug proxy for [Geeks]
+2023.01.02 15:59:06 INFO  Closing debug server tcp://0.0.0.0:21001
+2023.01.02 16:33:42 INFO  compiling scala_hello (1 scala source)
+2023.01.02 16:33:43 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.02 16:33:43 INFO  time: compiled scala_hello in 1.46s
+2023.01.02 16:33:50 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-server.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.01.02 16:33:50 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\dap-client.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.01.02 16:33:50 INFO  Starting debug proxy for [Geeks]
+2023.01.02 16:33:51 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:21149 .
+2023.01.02 16:33:51 INFO  Attaching to debuggee VM succeeded.
+2023.01.02 16:33:50 INFO  Canceling debug proxy for [Geeks]
+2023.01.02 16:33:51 INFO  Closing debug server tcp://0.0.0.0:21146
+2023.01.08 19:43:21 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\nitin\vscode\scala\scala_hello\.metals\lsp.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2023.01.08 19:43:22 INFO  logging to file C:\Users\nitin\vscode\scala\scala_hello\.metals\metals.log
+2023.01.08 19:43:22 INFO  Started: Metals version 0.11.10 in workspace 'C:\Users\nitin\vscode\scala\scala_hello' for client Visual Studio Code 1.74.2.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/nitin/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.01.08 19:43:29 INFO  time: initialize in 6.74s
+2023.01.08 19:43:30 INFO  Attempting to connect to the build server...
+Jan 08, 2023 7:43:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2023.01.08 19:43:30 INFO  skipping build import with status 'Installed'
+2023.01.08 19:43:30 INFO  Bloop uses C:\Users\nitin\AppData\Local\Coursier\cache\arc\https\github.com\AdoptOpenJDK\openjdk8-binaries\releases\download\jdk8u292-b10\OpenJDK8U-jdk_x64_windows_hotspot_8u292b10.zip\jdk8u292-b10 defined at C:\Users\nitin\.bloop\bloop.json
+2023.01.08 19:43:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\bsp.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.01.08 19:43:59 INFO  Attempting to connect to the build server...
+2023.01.08 19:43:59 INFO  Bloop uses C:\Users\nitin\AppData\Local\Coursier\cache\arc\https\github.com\AdoptOpenJDK\openjdk8-binaries\releases\download\jdk8u292-b10\OpenJDK8U-jdk_x64_windows_hotspot_8u292b10.zip\jdk8u292-b10 defined at C:\Users\nitin\.bloop\bloop.json
+2023.01.08 19:43:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\project\.metals\bsp.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.01.08 19:44:01 INFO  time: Connected to build server in 30s
+2023.01.08 19:44:01 INFO  Connected to Build server: Bloop v1.5.6
+2023.01.08 19:44:01 INFO  time: Imported build in 0.35s
+2023.01.08 19:44:21 INFO  time: indexed workspace in 20s
+2023.01.08 19:44:24 INFO  compiling scala_hello (1 scala source)
+2023.01.08 19:44:53 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2023.01.08 19:44:53 INFO  time: compiled scala_hello in 30s
+Jan 09, 2023 12:43:41 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.01.09 12:46:21 INFO  shutting down Metals
+2023.01.09 12:46:21 INFO  Shut down connection with build server.
+2023.01.09 12:46:21 INFO  Shut down connection with build server.
+2023.01.09 12:47:34 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\nitin\vscode\scala\scala_hello\.metals\lsp.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2023.01.09 12:47:36 INFO  logging to file C:\Users\nitin\vscode\scala\scala_hello\.metals\metals.log
+2023.01.09 12:47:36 INFO  Started: Metals version 0.11.10 in workspace 'C:\Users\nitin\vscode\scala\scala_hello' for client Visual Studio Code 1.74.2.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/nitin/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.01.09 12:47:39 INFO  time: initialize in 3.8s
+2023.01.09 12:47:41 INFO  Attempting to connect to the build server...
+2023.01.09 12:47:41 INFO  Bloop uses C:\Users\nitin\AppData\Local\Coursier\cache\arc\https\github.com\AdoptOpenJDK\openjdk8-binaries\releases\download\jdk8u292-b10\OpenJDK8U-jdk_x64_windows_hotspot_8u292b10.zip\jdk8u292-b10 defined at C:\Users\nitin\.bloop\bloop.json
+2023.01.09 12:47:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\.metals\bsp.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.01.09 12:47:41 INFO  Attempting to connect to the build server...
+2023.01.09 12:47:41 INFO  Bloop uses C:\Users\nitin\AppData\Local\Coursier\cache\arc\https\github.com\AdoptOpenJDK\openjdk8-binaries\releases\download\jdk8u292-b10\OpenJDK8U-jdk_x64_windows_hotspot_8u292b10.zip\jdk8u292-b10 defined at C:\Users\nitin\.bloop\bloop.json
+2023.01.09 12:47:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\nitin\vscode\scala\scala_hello\project\.metals\bsp.trace.json or C:\Users\nitin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.01.09 12:47:41 INFO  time: Connected to build server in 0.49s
+2023.01.09 12:47:41 INFO  Connected to Build server: Bloop v1.5.6
+2023.01.09 12:47:42 INFO  time: Imported build in 0.46s
